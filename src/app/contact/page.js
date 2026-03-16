@@ -6,28 +6,28 @@ export default function Contact() {
   return (
     <main>
       <section className="section">
-        <h2>Let's Connect</h2>
+<h2 className="big-h2 neon-gradient">Let's Connect</h2>
         <p className="contact-subtitle">Feel free to reach out for collaborations or just a friendly chat</p>
         
-        <div className="contact-info">
+        <div className="wide-contact-card">
           <div className="contact-item">
-            <FaEnvelope size={20} />
+            <FaEnvelope size={24} />
             <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
           </div>
           <div className="contact-item">
-            <FaPhone size={20} />
+            <FaPhone size={24} />
             <span>{personalInfo.phone}</span>
           </div>
           <div className="contact-item">
-            <FaGithub size={20} />
+            <FaGithub size={24} />
             <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
           <div className="contact-item">
-            <FaLinkedin size={20} />
+            <FaLinkedin size={24} />
             <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
           <div className="contact-item">
-            <SiLeetcode size={20} />
+            <SiLeetcode size={24} />
             <a href={personalInfo.leetcode} target="_blank" rel="noopener noreferrer">LeetCode</a>
           </div>
         </div>

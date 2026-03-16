@@ -1,6 +1,11 @@
-# Neon Theme Update
+# UI/UX Updates (from GitHub main)
 
 ## Steps:
-- [x] 1. Black background body #000000
-- [x] 2. Neon cards: about yellow, experience cyan, projects magenta, contact lime, black text/glows
-- [x] 3. Complete - site updated with black/neon theme
+- [x] 1. Plan approved
+- [ ] 2. Rename /about → /skills, update data/nav
+- [ ] 3. Hero video height adjustment
+- [ ] 4. Experience: certs single compact card
+- [ ] 5. Projects: infinite carousel
+- [ ] 6. Contact: single card form + socials
+- [ ] 7. Page-specific neon colors
+- [ ] 8. Update TODO, complete

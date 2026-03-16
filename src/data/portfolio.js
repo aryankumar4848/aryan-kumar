@@ -1,4 +1,4 @@
-// Portfolio data - easy to update
+// Portfolio data - updated from LaTeX resumes (V1 MERN focus)
 export const personalInfo = {
   name: "Aryan Kumar",
   title: "Full Stack Developer",
@@ -11,7 +11,7 @@ export const personalInfo = {
 };
 
 export const about = {
-  description: `Final-year Computer Science undergraduate with strong foundations in Data Structures, Operating Systems, and Networking. Experienced in designing concurrent, ACID-compliant backend systems and distributed microservices using Java, Spring Boot, PostgreSQL, Docker, and REST APIs. Strong understanding of scalable system design, database consistency models, and cloud-native development practices.`,
+  description: `Final-year Computer Science undergraduate passionate about building real-world products using the MERN stack. Experienced in developing scalable full-stack systems including real-time applications, AI-powered platforms, and e-commerce architectures. Strong foundation in backend engineering, API design, distributed systems basics, and performance optimization with hands-on experience in Docker, Redis, and CI/CD workflows.`,
 };
 
 export const education = {
@@ -30,122 +30,93 @@ export const experience = [
     location: "Bangalore, India",
     period: "",
     description: [
-      "Engineered a MERN-based booking system by implementing JWT-based RBAC and atomic slot validation logic, eliminating 100% double-booking across 5,000+ simulated reservations.",
-      "Improved database performance by introducing indexed MongoDB queries and benchmarking execution paths, increasing retrieval speed by 3x over 5k+ records.",
-      "Accelerated release cycles by automating CI pipelines using GitHub Actions, reducing deployment time by 60% (20 min → 8 min).",
+      "Built a MERN-based seminar hall booking system with JWT-based RBAC and atomic slot validation eliminating double-booking across 5,000+ simulated reservations.",
+      "Optimized MongoDB indexing and benchmarked queries across 5k+ records improving retrieval speed by 3×.",
+      "Configured CI/CD pipelines using GitHub Actions reducing deployment time from 20 minutes to under 8 minutes.",
+      "Digitized approval workflows reducing simulated processing time by ~40%.",
     ],
   },
 ];
 
 export const skills = [
-  // Languages
-  "Java",
-  "Python",
-  "JavaScript",
-  "SQL",
-  // Backend
-  "Spring Boot",
-  "Spring Cloud",
-  "Node.js",
-  "REST APIs",
-  "Hibernate",
-  "JPA",
-  // Databases
-  "PostgreSQL",
-  "MySQL",
-  "MongoDB",
-  // DevOps & Tools
-  "Docker",
-  "Git",
-  "GitHub Actions",
-  "Jenkins",
-  "CI/CD",
-  "Postman",
-  "JMeter",
-  // Core Concepts
-  "Data Structures & Algorithms",
-  "OOP",
-  "Concurrency",
-  "Microservices",
-  "Distributed Systems",
-  "System Design",
-  // OS & Networking
-  "Process Management",
-  "Synchronization",
-  "TCP/IP",
-  "HTTP/HTTPS",
+  "JavaScript", "Java", "Python", "SQL",
+  "MongoDB", "Express.js", "React.js", "Node.js",
+  "REST APIs", "JWT Authentication", "Redis", "Socket.io",
+  "React", "Tailwind CSS", "Framer Motion",
+  "Docker", "Git", "GitHub Actions", "Postman", "Swagger",
+  "Microsoft Azure (AZ-900 In Progress)",
+  "Data Structures & Algorithms", "OOP", "Concurrency", "Distributed Systems Basics"
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "Fintech Ledger",
-    description: "Fintech Ledger using Java Spring Boot",
-    tech: ["Java", "Spring Boot"],
-    link: "https://github.com/aryankumar4848/fintech-ledger",
+    title: "Real Time Chat Application",
+    description: "High-concurrency chat platform with multi-room support and persistent messaging using MongoDB Atlas. Optimistic UI, debounced typing indicators.",
+    tech: ["Node.js", "Express", "React", "MongoDB Atlas", "Socket.io"],
+    link: "https://github.com/aryankumar4848/socket-chat-app",
   },
   {
     id: 2,
-    title: "Event Driven Ticket Booking Microservice",
-    description: "Event driven booking microservice",
-    tech: ["Java", "Spring Boot", "Docker"],
-    link: "https://github.com/aryankumar4848/event-driven-ticket-booking-microservice",
+    title: "AgriConnect — MERN Agricultural Platform",
+    description: "Full-stack agricultural platform with e-commerce marketplace, Razorpay payments, JWT RBAC, Redis caching, Docker containerization.",
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "Redis", "Docker"],
+    link: "https://github.com/aryankumar4848/AgriConnect",
   },
   {
     id: 3,
-    title: "MBTI Chatbot",
-    description: "MBTI Chatbot for college mini project (6th semester). Using only lightweight backend ML model in deployment, so responses may not be accurate!",
-    tech: ["Python", "Jupyter Notebook", "ML"],
+    title: "MBTI Cognitive Chatbot",
+    description: "Full-stack AI chatbot with React frontend, Node.js APIs, Python ML service (mBERT classifier 0.81 AUC, DistilRoBERTa emotion detection), Docker Compose.",
+    tech: ["React", "Node.js", "Python", "MongoDB", "Docker"],
     link: "https://github.com/aryankumar4848/MBTI-Chatbot",
   },
   {
     id: 4,
-    title: "AgriConnect",
-    description: "Agriculture Marketplace",
-    tech: ["JavaScript"],
-    link: "https://github.com/aryankumar4848/AgriConnect",
+    title: "Fintech Ledger",
+    description: "ACID-compliant ledger API with transaction isolation, idempotency keys, cursor pagination, row-level locking.",
+    tech: ["Java", "Spring Boot", "PostgreSQL"],
+    link: "https://github.com/aryankumar4848/fintech-ledger",
   },
   {
     id: 5,
-    title: "Socket Chat App",
-    description: "MERN socket.io chat app",
-    tech: ["JavaScript", "MERN", "Socket.io"],
-    link: "https://github.com/aryankumar4848/socket-chat-app",
+    title: "Event Driven Ticket Booking Microservice",
+    description: "3-service microservices architecture (User/Event/Booking), Redis caching, JMeter load testing (150+ concurrent).",
+    tech: ["Java", "Spring Boot", "Docker", "PostgreSQL"],
+    link: "https://github.com/aryankumar4848/event-driven-ticket-booking-microservice",
   },
   {
     id: 6,
-    title: "Handwriting Recognition",
-    description: "Handwriting Recognition using MNIST Dataset",
-    tech: ["Python"],
-    link: "https://github.com/aryankumar4848/handwriting-recognition",
+    title: "Job Portal",
+    description: "Backend services with Admin/Recruiter/Candidate RBAC, 12+ REST endpoints, JPA/Hibernate schema.",
+    tech: ["Java", "Spring Boot", "MySQL"],
+    link: "https://github.com/aryankumar4848/job-portal",
   },
   {
     id: 7,
     title: "Stock Analysis",
-    description: "Analysis of S&P 500 trends over about 100 years",
-    tech: ["Python"],
+    description: "Automated financial intelligence pipeline processing historical CSVs into ML-backed investment summaries (Random Forest feature importance).",
+    tech: ["Python", "Pandas", "Scikit-learn"],
     link: "https://github.com/aryankumar4848/stock-analysis",
   },
   {
     id: 8,
-    title: "Job Portal",
-    description: "Job Portal System to track jobs",
-    tech: ["Java"],
-    link: "https://github.com/aryankumar4848/job-portal",
+    title: "Handwriting Recognition",
+    description: "AI-driven pattern recognition framework with CNN pipeline, grayscale normalization, 99.06% accuracy on MNIST.",
+    tech: ["Python", "TensorFlow", "OpenCV"],
+    link: "https://github.com/aryankumar4848/handwriting-recognition",
   }
 ];
 
 export const certifications = [
-  "Research Paper Accepted (IEEE Conference 2026) — MBTI-based cognitive chatbot architecture",
-  "Azure AZ-900 - Azure fundamentals",
-  "Solved 100+ DSA problems across LeetCode and GeeksforGeeks",
+  "Microsoft Azure Fundamentals (AZ-900) — In Progress",
+  "IEEE Conference Paper (March 2026) — AI-based cognitive chatbot integrating MBTI modeling and emotion-aware NLP",
+  "DSA Practice — Solved 100+ problems on LeetCode and GeeksforGeeks",
 ];
 
 export const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/skills", label: "Skills" },
   { href: "/experience", label: "Experience" },
   { href: "/projects", label: "Projects" },
   { href: "/contact", label: "Contact" },
 ];
-
