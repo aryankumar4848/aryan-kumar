@@ -1,7 +1,6 @@
-# Portfolio Projects Update
+# Neon Theme Update
 
 ## Steps:
-- [x] 1. TODO updated with plan
-- [x] 2. Update src/data/portfolio.js with new public repos
-- [x] 3. Verify /projects page renders all projects (hot reload auto-handled by dev server)
-- [x] 4. Complete
+- [x] 1. Black background body #000000
+- [x] 2. Neon cards: about yellow, experience cyan, projects magenta, contact lime, black text/glows
+- [x] 3. Complete - site updated with black/neon theme

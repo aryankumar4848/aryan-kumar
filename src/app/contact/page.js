@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <main>
       <section className="section">
-        <h2>Let&apos;s Connect</h2>
+        <h2>Let's Connect</h2>
         <p className="contact-subtitle">Feel free to reach out for collaborations or just a friendly chat</p>
         
         <div className="contact-info">
@@ -35,4 +35,3 @@ export default function Contact() {
     </main>
   );
 }
-

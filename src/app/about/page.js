@@ -10,7 +10,7 @@ export default function About() {
 
       <section className="section alt-bg">
         <h2>Education</h2>
-        <div className="experience-card">
+        <div className="about-card">
           <h3>{education.institution}</h3>
           <p className="company">{education.location}</p>
           <p className="period">{education.degree} | CGPA: {education.cgpa}</p>
@@ -33,7 +33,7 @@ export default function About() {
         <h2>Certifications & Achievements</h2>
         <div className="experience-list">
           {certifications.map((cert, index) => (
-            <div key={index} className="experience-card">
+            <div key={index} className="about-card">
               <p>{cert}</p>
             </div>
           ))}
@@ -42,7 +42,7 @@ export default function About() {
 
       <section className="section">
         <h2>Contact</h2>
-        <div className="experience-card">
+        <div className="about-card">
           <p><strong>Email:</strong> {personalInfo.email}</p>
           <p><strong>Phone:</strong> {personalInfo.phone}</p>
         </div>
