@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   /* config options here */
-  reactCompiler: true,
+  reactCompiler: false,
+  turbopack: {
+    resolveExtensions: [".mdx", ".md", ".jsx", ".js", ".tsx", ".ts"],
+  },
 };
 
 export default nextConfig;

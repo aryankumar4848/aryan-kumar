@@ -79,25 +79,60 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "Fintech Ledger & Payments API Platform",
-    description: "Built an ACID-compliant ledger API by implementing transaction isolation and row-level locking, ensuring 100% consistency across deposit, withdrawal, and transfer operations. Eliminated duplicate financial transactions by designing idempotency-key validation. Optimized API throughput using cursor-based pagination and query tuning.",
-    tech: ["Java", "Spring Boot", "PostgreSQL"],
+    title: "Fintech Ledger",
+    description: "Fintech Ledger using Java Spring Boot",
+    tech: ["Java", "Spring Boot"],
     link: "https://github.com/aryankumar4848/fintech-ledger",
   },
   {
     id: 2,
-    title: "Microservice-based Event Booking System",
-    description: "Designed a 3-service microservices architecture (User, Event, Booking) enabling modular deployment and service isolation. Prevented 100% seat double-booking under concurrency using transactional database locking. Validated system scalability using JMeter with 150+ concurrent users.",
-    tech: ["Spring Boot", "PostgreSQL", "Docker"],
+    title: "Event Driven Ticket Booking Microservice",
+    description: "Event driven booking microservice",
+    tech: ["Java", "Spring Boot", "Docker"],
     link: "https://github.com/aryankumar4848/event-driven-ticket-booking-microservice",
   },
   {
     id: 3,
-    title: "MBTI Cognitive Chatbot (AI Personality Inference System)",
-    description: "Built a full-stack AI chatbot by integrating a React frontend, Node.js backend, and Python ML inference service. Deployed an mBERT-based MBTI classifier (16 classes) achieving 0.81 validation AUC. Containerized client, server, and ML services using Docker Compose.",
-    tech: ["React", "Node.js", "Python", "Docker", "TensorFlow"],
-    link: "https://github.com/aryankumar4848/mbti-chatbot",
+    title: "MBTI Chatbot",
+    description: "MBTI Chatbot for college mini project (6th semester). Using only lightweight backend ML model in deployment, so responses may not be accurate!",
+    tech: ["Python", "Jupyter Notebook", "ML"],
+    link: "https://github.com/aryankumar4848/MBTI-Chatbot",
   },
+  {
+    id: 4,
+    title: "AgriConnect",
+    description: "Agriculture Marketplace",
+    tech: ["JavaScript"],
+    link: "https://github.com/aryankumar4848/AgriConnect",
+  },
+  {
+    id: 5,
+    title: "Socket Chat App",
+    description: "MERN socket.io chat app",
+    tech: ["JavaScript", "MERN", "Socket.io"],
+    link: "https://github.com/aryankumar4848/socket-chat-app",
+  },
+  {
+    id: 6,
+    title: "Handwriting Recognition",
+    description: "Handwriting Recognition using MNIST Dataset",
+    tech: ["Python"],
+    link: "https://github.com/aryankumar4848/handwriting-recognition",
+  },
+  {
+    id: 7,
+    title: "Stock Analysis",
+    description: "Analysis of S&P 500 trends over about 100 years",
+    tech: ["Python"],
+    link: "https://github.com/aryankumar4848/stock-analysis",
+  },
+  {
+    id: 8,
+    title: "Job Portal",
+    description: "Job Portal System to track jobs",
+    tech: ["Java"],
+    link: "https://github.com/aryankumar4848/job-portal",
+  }
 ];
 
 export const certifications = [
