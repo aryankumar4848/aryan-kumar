@@ -16,14 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/Aryan_Profile_Pic.jpeg" type="image/jpeg" />
-      </head>
       <body className={inter.className}>
         <Navbar />
-        <main className="pt-20">{children}</main>
+        <main className="app-main">{children}</main>
       </body>
     </html>
   );
 }
-

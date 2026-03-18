@@ -1,48 +1,32 @@
-"use client";
-
 import { projects } from "@/data/portfolio";
-import { useState, useEffect } from "react";
 
 export default function Projects() {
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    const speed = 0.3; // pixels per frame
-    const interval = setInterval(() => {
-      setOffset((prev) => {
-        const newOffset = prev + speed;
-        if (newOffset >= projects.length * 300) {
-          return 0;
-        }
-        return newOffset;
-      });
-    }, 16); // ~60fps
-
-    return () => clearInterval(interval);
-  }, []);
+  const looped = [...projects, ...projects];
 
   return (
     <main className="projects-main">
       <section className="section tight-section">
-<h2 className="big-h2 neon-gradient">Projects</h2>
-        <div className="infinite-carousel">
-          <div className="carousel-track" style={{ transform: `translateX(-${offset}px)` }}>
-            {[...projects, ...projects, ...projects].map((project, index) => (
-              <div key={index} className="carousel-item">
-                <div className="project-mini-card">
-                  <div className="project-image-placeholder"></div>
-                  <h4 className="transparent-name">{project.title}</h4>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="mini-deploy-link">
-                    View Live →
-                  </a>
-                  <div className="mini-tech">
-                    {project.tech.slice(0, 3).map((tech) => (
-                      <span key={tech} className="tech-mini">{tech}</span>
+        <h2 className="big-h2 neon-gradient">Projects</h2>
+        <div className="carousel-shell">
+          <div className="carousel-viewport" aria-label="Projects carousel">
+            <div className="carousel-track">
+              {looped.map((project, index) => (
+                <article key={`${project.id}-${index}`} className="project-card">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <div className="project-tech" aria-label="Tech stack">
+                    {project.tech.map((tech) => (
+                      <span key={tech} className="tech-pill">
+                        {tech}
+                      </span>
                     ))}
                   </div>
-                </div>
-              </div>
-            ))}
+                  <a className="project-link" href={project.link} target="_blank" rel="noopener noreferrer">
+                    View project →
+                  </a>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>

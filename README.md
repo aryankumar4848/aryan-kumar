@@ -20,6 +20,17 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Contact Form Delivery
+
+The `/contact` page submits to `POST /api/contact`.
+
+By default, if server delivery isn’t configured, the UI falls back to opening a pre-filled email draft in the visitor’s email client.
+
+To make submissions reach your inbox automatically, copy `.env.example` → `.env.local` and configure **either**:
+
+- **SMTP** (recommended): `CONTACT_SMTP_HOST`, `CONTACT_SMTP_PORT`, `CONTACT_SMTP_USER`, `CONTACT_SMTP_PASS`, `CONTACT_TO`, `CONTACT_FROM`
+- **Webhook**: `CONTACT_WEBHOOK_URL`
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

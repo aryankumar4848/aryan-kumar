@@ -3,33 +3,26 @@
 import { personalInfo, about } from "@/data/portfolio";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
-  const [showContactForm, setShowContactForm] = useState(false);
-
-  const handleContactClick = () => {
-    setShowContactForm(true);
-  };
-
-  const handleCloseForm = () => {
-    setShowContactForm(false);
-  };
-
   return (
     <main>
       <section className="hero">
-        <video 
-          src="/Portfolio_Video.mp4" 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
-          className="hero-video"
-          alt="Aryan Kumar Portfolio Video"
-        />
+        <div className="hero-video-wrap" aria-label="Portfolio video">
+          <video
+            src="/Portfolio_Video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            poster={personalInfo.photo}
+            className="hero-video"
+          />
+        </div>
         <div className="hero-right">
-<h1 className="big-h1 neon-gradient">
+          <h1 className="big-h1 neon-gradient">
             Hi, I'm <span className="highlight">{personalInfo.name}</span>
           </h1>
           <p className="subtitle">{personalInfo.title}</p>
@@ -49,25 +42,10 @@ export default function Home() {
             <a href="/Aryan_Kumar_Resume.pdf" download className="btn neon-btn download-cv">
               Download CV
             </a>
-            <button onClick={handleContactClick} className="btn neon-btn contact-btn">
+            <Link href="/contact" className="btn neon-btn contact-btn" prefetch>
               Contact Me
-            </button>
+            </Link>
           </div>
-
-          {showContactForm && (
-            <div className="contact-modal">
-              <div className="contact-modal-content">
-                <button className="close-btn" onClick={handleCloseForm}>×</button>
-                <h3>Get in Touch</h3>
-                <form className="contact-form">
-                  <input type="text" placeholder="Your Name" required />
-                  <input type="email" placeholder="Your Email" required />
-                  <textarea placeholder="Your Message" rows={5} required />
-                  <button type="submit" className="submit-btn">Send Message</button>
-                </form>
-              </div>
-            </div>
-          )}
         </div>
       </section>
     </main>

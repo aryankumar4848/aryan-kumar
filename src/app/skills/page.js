@@ -4,8 +4,8 @@ export default function Skills() {
   return (
     <main className="skills-page">
       <section className="section tight-section">
-        <h2 className="big-h2">Education</h2>
-        <div className="education-card about-card">
+        <h2 className="big-h2 neon-gradient">Education</h2>
+        <div className="education-card">
           <div className="education-header">
             <h3>{education.institution}</h3>
             <div className="education-meta">
@@ -22,10 +22,10 @@ export default function Skills() {
       </section>
 
       <section className="section tight-section">
-        <h2 className="big-h2">Technical Skills</h2>
-        <div className="skills-grid large-grid">
-          {skills.map((skill, index) => (
-            <span key={skill} className="skill-tag large-skill">
+        <h2 className="big-h2 neon-gradient">Technical Skills</h2>
+        <div className="skills-wall" aria-label="Technical skills wall">
+          {skills.map((skill) => (
+            <span key={skill} className="skill-brick">
               {skill}
             </span>
           ))}
